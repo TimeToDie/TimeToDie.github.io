@@ -362,7 +362,7 @@ define(['zepto', 'pixi', 'vr', 'handleEventPerformer', 'timer', 'helpers'], func
         , centerPosition = _g.state.performer.center.position
         , centerRadius = _g.state.performer.hitRadius
         , tentacleHitRadius = _g.state.performer.tentacleHitRadius
-        , damage = 700 / (_g.state.avatarCount + 1)
+        , damage = 600 / (_g.state.avatarCount + 1)
         , newX
         , newY;
         //, distance = velocity * timeDelta;
