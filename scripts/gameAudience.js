@@ -50,10 +50,10 @@ define(['zepto', 'pixi', 'input/handleInputAudience', 'helpers'], function ($, P
       , setupDBConnection: function () {
           var _g = this
             , database = _g.state.database;
-          database.avatars = new Firebase('https://olinhackmit.firebaseIO.com/avatars');
+          database.avatars = new Firebase('https://olinhacksmit.firebaseIO.com/avatars');
           database.myAvatar = database.avatars.push({joined: (new Date()).toJSON(), angle: database.rotation});
           database.myAvatar.onDisconnect().remove();
-          database.attacks = new Firebase('https://olinhackmit.firebaseIO.com/attacks');
+          database.attacks = new Firebase('https://olinhacksmit.firebaseIO.com/attacks');
 
           var pathArray = database.myAvatar.path.m;
           database.myID = pathArray[pathArray.length - 1];
@@ -115,7 +115,7 @@ define(['zepto', 'pixi', 'input/handleInputAudience', 'helpers'], function ($, P
               sprites.button.clicked = true;
               sprites.button.lastClicked = (new Date()).getTime();
               sprites.button.canFire = false;
-              console.log("Fired");     
+              console.log("Fired");
             }
           }
 

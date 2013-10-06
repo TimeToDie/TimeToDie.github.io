@@ -71,8 +71,8 @@ define(['zepto', 'pixi', 'vr', 'handleEventPerformer', 'timer', 'helpers'], func
   , setupDBConnection: function () {
       var _g = this
         , database = _g.state.database;
-      database.avatars = new Firebase('https://olinhackmit.firebaseIO.com/avatars');
-      database.attacks = new Firebase('https://olinhackmit.firebaseIO.com/attacks');
+      database.avatars = new Firebase('https://olinhacksmit.firebaseIO.com/avatars');
+      database.attacks = new Firebase('https://olinhacksmit.firebaseIO.com/attacks');
     }
   , setupGraphics: function () {
       var _g = this
