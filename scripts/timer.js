@@ -9,9 +9,9 @@ define([], function () {
       for (var i=0; i<_g.state.performer.legs.length; i++) {
         _g.state.performer.legs[i].upperLeg.visible = true;
         _g.state.performer.legs[i].lowerLeg.visible = true;
-        $('#countDiv').html(_g.state.counters.shotsFired.toString() + " shots fired");       
+        $('#countDiv').html(_g.state.counters.shotsFired.toString() + " shots fired");
       }
-      var count = 120;
+      var count = 60;
 
       var timer = function () {
         var _g = this;
